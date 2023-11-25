@@ -14,7 +14,7 @@ int main(int ac, char **av)
 	FILE *fp;
 	char *lineread;
 	size_t lsize;
-	int num, i;
+	unsigned long num, i;
 
 	fp = fopen(av[1], "r");
 	if (fp == NULL)
@@ -26,7 +26,7 @@ int main(int ac, char **av)
 		{
 			if (num % i == 0)
 			{
-				printf("%d=%d*%d\n", num, num / i, i);
+				printf("%lu=%lu*%lu\n", num, num / i, i);
 				break;
 			}
 		}
