@@ -26,7 +26,8 @@ int main(int ac, char **av)
 		{
 			if (num % i == 0)
 			{
-				printf("%d=%d*%d\n", num, num, i);
+				printf("%d=%d*%d\n", num, num / i, i);
+				break;
 			}
 		}
 	}
