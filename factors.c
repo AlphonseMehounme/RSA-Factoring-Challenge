@@ -22,14 +22,13 @@ int main(int ac, char **av)
 	while (getline(&lineread, &lsize, fp) != -1)
 	{
 		num = atoi(lineread);
-		for (i = 0; i <= num; i++)
+		for (i = 2; i <= num; i++)
 		{
 			if (num % i == 0)
 			{
-				printf("%d=%d*%d", num, num, i);
+				printf("%d=%d*%d\n", num, num, i);
 			}
 		}
-		free(lineread);
 	}
 	fclose(fp);
 	return (0);
